@@ -101,4 +101,4 @@ app.get("/projects", (req, res, next) => {
 });
 
 // Listen on Port:3000
-app.listen(3000, () => console.log("Why are you runnin'?!"))
+app.listen(process.env.PORT || 3000, () => console.log("Why are you runnin'?!"))
